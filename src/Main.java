@@ -4,12 +4,21 @@ public class Main {
         System.out.println("Домашнее задание 3");
         // Задание 1.3
         System.out.println("Задание 1.3");
-        int moneyPerMonth = 29000;
-        int total = 0;
-        for (int m = 1; m <= 12; m += 1) {
-            total = total + moneyPerMonth;
-            System.out.println("Месяц " + m + ", сумма накоплений равна " + total + " рублей");
+        int part = 29_000;
+        int sum = 0;
+        for (int i = 1; i <= 12; i++) {
+            sum += part;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
         }
-        System.out.println(total);
+
+        // Задание 2.3
+        System.out.println("Задание 2.3");
+        double sumWithPercent = 0;
+        double percent = 0.01;
+        for (int i = 1; i <= 12; i++) {
+            sumWithPercent = (sumWithPercent + part) * (1 + percent) ;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sumWithPercent + " рублей");
+        }
+
     }
 }
